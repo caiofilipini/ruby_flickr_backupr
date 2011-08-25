@@ -1,10 +1,12 @@
 require "rubygems"
 require "yaml"
 
-CONFIG = YAML.load_file("config.yml")
+CONFIG = YAML.load_file(File.expand_path(File.dirname(__FILE__) + "/../config.yml"))
 
-require File.expand_path("lib/flickr_backupr/photo_downloadr")
-require File.expand_path("lib/flickr_backupr/local_image")
-require File.expand_path("lib/flickr_backupr/backupr")
+$LOAD_PATH.unshift File.dirname(__FILE__)
+
+require "flickr_backupr/photo_downloadr"
+require "flickr_backupr/local_image"
+require "flickr_backupr/backupr"
 
 Backupr.backup!

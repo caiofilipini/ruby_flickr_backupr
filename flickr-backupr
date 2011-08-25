@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-require File.expand_path("./lib/flickr_backupr")
+require File.expand_path(File.dirname(__FILE__) + "/lib/flickr_backupr")
