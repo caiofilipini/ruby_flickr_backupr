@@ -1,5 +1,5 @@
-Overview
----
+Ruby Flickr Backupr
+===
 
 A simple Ruby script that saves all your photos locally. It is based on Flickr Sets, so it searches for all your sets and then saves all photos from that set in a local directory with the set name.
 
