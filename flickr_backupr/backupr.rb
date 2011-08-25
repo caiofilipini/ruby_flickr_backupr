@@ -35,7 +35,7 @@ class Backupr
           original_url = FlickRaw.url_o info
           puts "Found photo ##{photo.id}. Original size at #{original_url}"
 
-          puts "Downloading #{original_url}..."
+          puts "Downloading #{original_url}, please wait..."
           image_bytes = PhotoDownloadr.get(original_url).body
           puts "Download of #{image_bytes.size} bytes completed."
 
