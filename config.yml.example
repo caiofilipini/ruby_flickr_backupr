@@ -1,0 +1,6 @@
+base_dir: "/path/to/your/backup/directory"
+flickr:
+  api_key: "your Flickr API key"
+  secret: "your Flickr secret key"
+  auth_token: "your Flickr auth token"
+

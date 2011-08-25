@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    crack (0.1.8)
+    flickraw (0.8.4)
+      json (>= 1.1.1)
+    httparty (0.7.8)
+      crack (= 0.1.8)
+    json (1.5.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  flickraw
+  httparty
