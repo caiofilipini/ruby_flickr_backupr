@@ -32,3 +32,13 @@ How it works
 ---
 
 The script searches for your photo sets, and for every photo on each set, it downloads a binary copy of the original size. Using the base directory configured in `config.yml`, it then creates on subdirectory for each set, using the original set name (with spaces removed). It assumes the photo ID provided by Flickr as the name for the file. But before actually writing the file to disk, if that file already exists, it runs a MD5 checksum to avoid rewriting the file.
+
+Possible improvements
+---
+
+* Improve error handling that is crappy (lacking, to be honest)
+* Figure out a way of avoid downloading a file that already exists
+* I'm not sure if it works for a user that doesn't have any sets
+
+If you have suggestions, please fork and send pull requests, or create an issue.
+Thanks!
