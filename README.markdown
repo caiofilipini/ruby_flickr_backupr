@@ -1,11 +1,11 @@
 Ruby Flickr Backupr
 ===
 
-A simple Ruby script that saves all your photos locally. It is based on Flickr Sets, so it searches for all your sets and then saves all photos from that set in a local directory with the set name.
+A simple Ruby script that saves all your photos locally.
 
 Yes, this is yet another backup script for Flickr. The goal here was to play around with Flickr API and have some fun. And yet it could be useful to someone else, so here it is.
 
-A few steps must be followed before using the script.
+A few important steps must be followed before using the script. Be sure to read on.
 
 Configuration
 ---
@@ -27,3 +27,8 @@ Running the script (finally!)
 ---
 
 Just run `./flickr_backupr` in your terminal and wait for it to download all your Flickr files.
+
+How it works
+---
+
+The script searches for your photo sets, and for every photo on each set, it downloads a binary copy of the original size. Using the base directory configured in `config.yml`, it then creates on subdirectory for each set, using the original set name (with spaces removed). It assumes the photo ID provided by Flickr as the name for the file. But before actually writing the file to disk, if that file already exists, it runs a MD5 checksum to avoid rewriting the file.
