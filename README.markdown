@@ -18,8 +18,10 @@ Authentication
 ---
 
 For now, you must be authenticated in order to backup your Flickr account. There is a script called `auth.rb` that acquires a valid authentication token from Flickr, using the API and secret keys previously configured.
-You will be prompted to access a Flickr URL using your favorite browser to get the token.
+Run `ruby auth.rb` in your terminal. You will be prompted to access a Flickr URL using your favorite browser to get the token.
 After getting that token, place it in your `config.yml` file under the key `auth_token` and go to the next step.
+
+This method is a little inconvenient, and I shall improve it soon.
 
 Running the script (finally!)
 ---
